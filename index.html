@@ -38,14 +38,35 @@
                     </div>
                 </div>
                 <div class="equalize">=</div>
-                <div class="equals">
+                <div
+                    class="equals"
+                    id="equals"
+                    ondragenter="dragEnter(event)"
+                    ondragleave="dragLeave(event)"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
                     <div class="titleContentDivs">
                         <div class="oneBasket">1 basket</div>
                     </div>
                 </div>
             </div>
-            <div class="rowApples">
-                <img src="./pictures/greenApple.svg" alt="greenApple" />
+            <div
+                class="rowApples"
+                ondragenter="dragEnter(event)"
+                ondragleave="dragLeave(event)"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+            >
+                <img
+                    src="./pictures/greenApple.svg"
+                    alt="greenApple"
+                    id="greenApple"
+                    draggable="true"
+                    ondragstart="dragStart(event)"
+                    ondrag="dragging(event)"
+                    ondragend="dragEnd(event)"
+                />
                 <img src="./pictures/greenApple.svg" alt="greenApple" />
                 <img src="./pictures/greenApple.svg" alt="greenApple" />
                 <img src="./pictures/greenApple.svg" alt="greenApple" />
