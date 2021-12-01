@@ -126,6 +126,30 @@ body {
     border-radius: 5px;
 }
 
+.fruits {
+    position: relative;
+    width: 87.95px;
+    height: 42.69px;
+    left: -110px;
+    top: 45px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.equalize {
+    position: relative;
+    width: 10px;
+    height: 20px;
+    top: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #2f2f2f;
+}
+
 .titleContentDivs {
     position: relative;
     width: 270px;
@@ -146,4 +170,22 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+}
+
+/* rowApples styles */
+
+.rowApples {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 727.47px;
+    height: 40px;
+    left: 221px;
+    top: 132px;
+}
+
+.rowApples img {
+    margin-right: 31px;
+    cursor: grab;
 }
