@@ -4,6 +4,7 @@ function dragStart(event) {
         "parentElementIdStarted",
         event.target.parentElement.id
     );
+    localStorage.setItem("positionApple", event.target.dataset.position);
 }
 
 function allowDrop(event) {
@@ -11,6 +12,7 @@ function allowDrop(event) {
 }
 
 function drop(event) {
+    let positionApple = localStorage.getItem("positionApple");
     let figureId = localStorage.getItem("idStarted");
     let selectedFigure = document.getElementById(figureId);
 
@@ -19,10 +21,21 @@ function drop(event) {
 
     event.target.appendChild(objectBeingCreated).appendChild(selectedFigure); // закончили вставку яблока в корзину
 
-    let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
-    let parElem = document.getElementById(parentElementIdStarted);
+    // создаём копию и ставим на место оригинала
 
-    if (parentElementIdStarted === "rowApples") {
-        parElem.children[0].style.opacity = "0.5"; // пометили перенесённый фрукт
-    }
+    let copyBeingCreated = document.createElement("img");
+    copyBeingCreated.src = "./pictures/greenApple.svg";
+    copyBeingCreated.id = figureId;
+    copyBeingCreated.setAttribute("data-position", positionApple);
+    copyBeingCreated.style.opacity = "0.5";
+
+    let newPlaceSelectedApple =
+        document.getElementsByClassName("appleInRow")[positionApple];
+    newPlaceSelectedApple.appendChild(copyBeingCreated);
+
+    // let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
+    // let parElem = document.getElementById(parentElementIdStarted);
+
+    // if (parentElementIdStarted === "rowApples") {
+    // }
 }
