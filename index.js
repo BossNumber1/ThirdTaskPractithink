@@ -39,10 +39,9 @@ function drop(event) {
     newPlaceSelectedApple.appendChild(copyBeingCreated);
 }
 
-// вдруг пригодится ;-)
+// А вдруг пригодится ;-)
 
-// let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
-// let parElem = document.getElementById(parentElementIdStarted);
+/*  let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
+    let parElem = document.getElementById(parentElementIdStarted);
 
-// if (parentElementIdStarted === "rowApples") {
-// }
+    if (parentElementIdStarted === "rowApples") {} */
