@@ -111,24 +111,18 @@ body {
     height: 161px;
     left: 299px;
     top: 99px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.addition {
-    position: relative;
-    width: 270px;
-    height: 160px;
-    border: 1px solid blue;
-}
-
+.addition,
 .equals {
     position: relative;
     width: 270px;
     height: 160px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .titleContentDivs {
