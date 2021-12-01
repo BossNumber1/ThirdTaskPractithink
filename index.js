@@ -12,15 +12,19 @@ function allowDrop(event) {
 }
 
 function drop(event) {
+    // забираем данные из хранилища
+
     let positionApple = localStorage.getItem("positionApple");
     let figureId = localStorage.getItem("idStarted");
+
+    // начинаем ложить яблоко в корзину
 
     let selectedFigure = document.getElementById(figureId);
 
     let objectBeingCreated = document.createElement("div");
     objectBeingCreated.style.marginLeft = "12px";
 
-    event.target.appendChild(objectBeingCreated).appendChild(selectedFigure); // закончили вставку яблока в корзину
+    event.target.appendChild(objectBeingCreated).appendChild(selectedFigure);
 
     // создаём копию и ставим на место оригинала
 
@@ -33,10 +37,12 @@ function drop(event) {
     let newPlaceSelectedApple =
         document.getElementsByClassName("appleInRow")[positionApple];
     newPlaceSelectedApple.appendChild(copyBeingCreated);
-
-    // let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
-    // let parElem = document.getElementById(parentElementIdStarted);
-
-    // if (parentElementIdStarted === "rowApples") {
-    // }
 }
+
+// вдруг пригодится ;-)
+
+// let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
+// let parElem = document.getElementById(parentElementIdStarted);
+
+// if (parentElementIdStarted === "rowApples") {
+// }
