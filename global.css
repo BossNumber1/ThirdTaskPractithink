@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 
+/* common styles with other tasks */
+
 body {
     font-family: "Montserrat", sans-serif;
     -moz-user-select: none;
@@ -10,7 +12,7 @@ body {
 .app {
     position: relative;
     width: 1170px;
-    height: 362px;
+    height: 440px;
     top: 10px;
     left: calc(50% - 1170px / 2);
     border: 0.5px solid #369cb7;
@@ -54,6 +56,8 @@ body {
     margin-top: 31px;
 }
 
+/* fruitUnderTitle styles */
+
 .fruitUnderTitle {
     position: relative;
     left: 490px;
@@ -61,68 +65,88 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* flex-direction: row;
-    align-items: center; */
     width: 191.95px;
     height: 42.69px;
-    /* border: 1px solid orange; */
 }
 
 .applePrice {
     left: 0;
-    /* background-color: red; */
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 0px; */
-    /* position: static; */
     width: 83.95px;
     height: 40px;
-    /* left: 0px; */
-    /* top: 1.35px; */
-    /* flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 19px; */
 }
 
 .pineapplePrice {
-    /* text-align: right; */
-    /* background-color: blue; */
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 0px; */
-    /* position: static; */
     width: 83.95px;
     height: 42.69px;
-    /* left: 102.95px; */
-    /* top: 0px; */
-
-    /* flex: none;
-    order: 1;
-    flex-grow: 0; */
-    /* margin: 0px 19px; */
 }
 
 .price {
-    /* position: static; */
     width: 51px;
     height: 20px;
     left: 42.95px;
     top: 10px;
-
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-
     color: #0e80a4;
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 0px 5px;
+}
+
+/* content styles */
+
+.content {
+    position: relative;
+    width: 571px;
+    height: 161px;
+    left: 299px;
+    top: 99px;
+    border: 1px solid orange;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.addition {
+    position: relative;
+    width: 270px;
+    height: 160px;
+    border: 1px solid blue;
+}
+
+.equals {
+    position: relative;
+    width: 270px;
+    height: 160px;
+    border: 1px solid blue;
+}
+
+.titleContentDivs {
+    position: relative;
+    width: 270px;
+    height: 28px;
+    background: #205b64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneBasket {
+    width: 68px;
+    height: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
 }
