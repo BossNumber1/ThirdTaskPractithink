@@ -122,7 +122,8 @@ body {
     position: relative;
     width: 270px;
     height: 160px;
-    /* border: 1px solid blue; */
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
 }
 
 .titleContentDivs {
@@ -133,6 +134,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .oneBasket {
