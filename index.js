@@ -14,6 +14,7 @@ function allowDrop(event) {
 function drop(event) {
     let positionApple = localStorage.getItem("positionApple");
     let figureId = localStorage.getItem("idStarted");
+
     let selectedFigure = document.getElementById(figureId);
 
     let objectBeingCreated = document.createElement("div");
