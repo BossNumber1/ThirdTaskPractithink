@@ -73,20 +73,13 @@ function drop(e) {
 // summing up
 
 document.getElementById("submit").onclick = function () {
-    // проверяем - заполнена ли корзина
-
     let basket = document.getElementsByClassName("fruitBase")[0];
 
-    if (basket.children.length > 0) {
-        // okey, корзина заполнена, можно проверять на равенство
-        if (basket.children.length === 5) {
-            alert(" молодец! верный выбор ");
-        } else {
-            alert(
-                " необходимо поставить столько яблок, чтобы по цене было столько же, сколько и в первой корзине "
-            );
-        }
+    if (basket.children.length === 5) {
+        alert(" молодец! верный выбор ");
     } else {
-        alert(" корзина пуста, необходимо сначала заполнить её ");
+        alert(
+            " необходимо поставить столько яблок, чтобы по цене было столько же, сколько и в первой корзине "
+        );
     }
 };
