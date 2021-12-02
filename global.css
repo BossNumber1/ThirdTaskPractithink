@@ -111,7 +111,6 @@ body {
     height: 161px;
     left: 299px;
     top: 99px;
-    /* border: 1px solid orange; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -124,6 +123,10 @@ body {
     height: 160px;
     border: 1px solid #d0d0d0;
     border-radius: 5px;
+}
+
+.fruitBase {
+    display: flex;
 }
 
 .fruits {

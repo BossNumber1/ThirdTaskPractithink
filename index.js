@@ -19,12 +19,15 @@ function drop(event) {
 
     // начинаем ложить яблоко в корзину
 
-    let selectedFigure = document.getElementById(figureId);
+    let selectedFigure = document.getElementById(figureId); // получаем картинку для вставки
 
     let objectBeingCreated = document.createElement("div");
     objectBeingCreated.style.marginLeft = "12px";
 
-    event.target.appendChild(objectBeingCreated).appendChild(selectedFigure);
+    document
+        .getElementsByClassName("fruitBase")[0]
+        .appendChild(objectBeingCreated)
+        .appendChild(selectedFigure);
 
     // создаём копию и ставим на место оригинала
 
@@ -44,4 +47,6 @@ function drop(event) {
 /*  let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
     let parElem = document.getElementById(parentElementIdStarted);
 
-    if (parentElementIdStarted === "rowApples") {} */
+    if (parentElementIdStarted === "rowApples") {} 
+    
+    когда ложим яблоко в корзину  event.target.appendChild(objectBeingCreated).appendChild(selectedFigure); */
