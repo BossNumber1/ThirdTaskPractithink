@@ -53,7 +53,7 @@ function drop() {
         newPlaceSelectedApple.appendChild(copyBeingCreated);
     }
 
-    // теперь стоит сделать возможность возврата на место
+    // делаем возврат на место
 
     if (parentElementIdStarted === "appleInBasket" + positionApple) {
         // убираем яблоко из корзины
