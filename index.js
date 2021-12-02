@@ -78,11 +78,11 @@ document.getElementById("submit").onclick = function () {
     if (basket.children.length > 0) {
         // okey, корзина заполнена, можно проверять на равенство
         if (basket.children.length === 5) {
+            alert(" молодец! верный выбор ");
+        } else {
             alert(
                 " необходимо поставить столько яблок, чтобы по цене было столько же, сколько и в первой корзине "
             );
-        } else {
-            alert(" неверно, попробуй ещё раз ");
         }
     } else {
         alert(" корзина пуста, необходимо сначала заполнить её ");
