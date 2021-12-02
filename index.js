@@ -56,8 +56,13 @@ function drop(event) {
     // теперь стоит сделать возможность возврата на место
 
     if (parentElementIdStarted === "appleInBasket" + positionApple) {
-        // стираем из корзины блок
+        // убираем яблоко из корзины
         document.getElementById(parentElementIdStarted).remove();
+
+        // возвращаем прозрачность положенному яблоку
+        let returnedApple =
+            document.getElementsByClassName("appleInRow")[positionApple];
+        returnedApple.children[0].style.opacity = "1";
     }
 }
 
