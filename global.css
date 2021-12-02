@@ -103,6 +103,21 @@ body {
     margin: 0px 5px;
 }
 
+.undo a {
+    position: relative;
+    width: 43px;
+    height: 20px;
+    left: 299px;
+    top: 89px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #f709fc;
+}
+
 /* content styles */
 
 .content {
@@ -124,10 +139,6 @@ body {
     border: 1px solid #d0d0d0;
     border-radius: 5px;
 }
-
-/* .fruitBase {
-    display: flex;
-} */
 
 .fruits {
     position: relative;
