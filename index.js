@@ -1,3 +1,5 @@
+// drag and drop implementation
+
 function dragStart(event) {
     localStorage.setItem("idStarted", event.target.id);
 
@@ -65,3 +67,17 @@ function drop() {
         returnedApple.children[0].style.opacity = "1";
     }
 }
+
+// summing up
+
+document.getElementById("submit").onclick = function () {
+    // проверяем - заполнена ли корзина
+
+    let basket = document.getElementsByClassName("fruitBase")[0];
+
+    if (basket.children.length > 0) {
+        // okey, корзина заполнена, можно проверять на равенство
+    } else {
+        alert(" корзина пуста, необходимо сначала заполнить её ");
+    }
+};
