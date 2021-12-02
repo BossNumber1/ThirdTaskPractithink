@@ -22,7 +22,7 @@ function allowDrop(event) {
     event.preventDefault();
 }
 
-function drop() {
+function drop(e) {
     // забираем данные из хранилища
 
     let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
@@ -34,7 +34,9 @@ function drop() {
         let selectedFigure = document.getElementById(figureId); // получаем картинку для вставки
 
         let objectBeingCreated = document.createElement("div");
-        objectBeingCreated.style.marginLeft = "12px";
+        objectBeingCreated.style.position = "absolute";
+        objectBeingCreated.style.paddingTop = e.clientY - 240 + "px";
+        objectBeingCreated.style.paddingLeft = e.clientX - 660 + "px";
         objectBeingCreated.id = "appleInBasket" + positionApple;
 
         document

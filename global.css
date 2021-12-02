@@ -125,9 +125,9 @@ body {
     border-radius: 5px;
 }
 
-.fruitBase {
+/* .fruitBase {
     display: flex;
-}
+} */
 
 .fruits {
     position: relative;
