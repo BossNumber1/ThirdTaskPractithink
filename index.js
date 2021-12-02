@@ -20,7 +20,7 @@ function allowDrop(event) {
     event.preventDefault();
 }
 
-function drop(event) {
+function drop() {
     // забираем данные из хранилища
 
     let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
@@ -65,12 +65,3 @@ function drop(event) {
         returnedApple.children[0].style.opacity = "1";
     }
 }
-
-// А вдруг пригодится ;-)
-
-/*  let parentElementIdStarted = localStorage.getItem("parentElementIdStarted");
-    let parElem = document.getElementById(parentElementIdStarted);
-
-    if (parentElementIdStarted === "rowApples") {} 
-    
-    когда ложим яблоко в корзину  event.target.appendChild(objectBeingCreated).appendChild(selectedFigure); */
